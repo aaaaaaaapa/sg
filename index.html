@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script type="module" src="./scripts/chats.js" defer></script>
+    <title>Main</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <nav class="navigation">
+        
+                <div class="left-bar">
+        
+                    <a href="./index.html">
+                        <h1 class="lk-header">
+                            Онлайн-чат
+                        </h1>
+                    </a>
+                    
+                </div>
+        
+                <div class="right-bar">
+                    <a href="./profile.html" class="profile">
+                        <div class="circle"></div>
+                        
+                        <span class="lk-text">
+                            root
+                        </span>
+        
+                        <span class="dropdown-arrow">
+                            &#8744;
+                        </span>
+                    </a>
+                    
+                        <ul class="dropdown">
+                            <a href="./profile.html">Личный кабинет</a>
+                            <!-- <a href="./registration.html">Регистрация</a>
+                            <a href="./login.html">Войти</a> -->
+                            <a href="#">Выйти</a>
+                        </ul>
+        
+                </div>
+        
+            </nav>
+        
+            <div class="main">
+
+                <div class="chats-container">
+
+                    <div class="chat-left-bar">
+
+                        <div class="chats">
+
+                            <div class="chat-top">
+
+                                <h2 class="chat-header">
+                                    Список чатов
+                                </h2>
+    
+                                <input type="text" class="search-input"
+                                placeholder="Поиск">
+                                
+                            </div>
+
+                            <ul class="chat-list">
+
+                                <!-- <li class="chat-list-item active">
+                                    <div class="circle"></div>
+                        
+                                    <span class="lk-text">
+                                        user1
+                                    </span>
+                                </li>
+
+                                <li class="chat-list-item">
+                                    <div class="circle"></div>
+                        
+                                    <span class="lk-text">
+                                        user2
+                                    </span>
+                                </li>
+
+                                <li class="chat-list-item">
+                                    <div class="circle"></div>
+                        
+                                    <span class="lk-text">
+                                        user3
+                                    </span>
+                                </li> -->
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chat-right-bar">
+                        
+                        <div class="chat-info">
+
+                            <div class="chat-info-container">
+
+                                <div class="chat-info-left">
+    
+                                    <div class="circle middle"></div>
+                                
+                                    <div class="info-text">
+                                        <span class="lk-text nick">
+                                            root
+                                        </span>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+                            
+                        </div>
+        
+                        <div class="chat-container">
+                            <div class="chat-messages" id="chat-messages">
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" id="message-input" placeholder="Введите сообщение...">
+                                <button id="send-button">Отправить</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+                </div>
+        
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

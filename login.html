@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <script type="module" src="./scripts/form.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="registr-header">Войти в аккаунт</h1>
+            <form class="login-form" id="login-form" method="POST">
+                            
+                <div class="form-elem">
+                    <label for="username" class="form-label">Имя пользователя или email</label>
+                    <input type="text" class="form-control" id="id_username"
+                        name="username"
+                        placeholder="Введите имя или почту" required>
+                </div>
+            
+                <div class="form-elem">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="id_password"
+                        name="password"
+                        placeholder="Введите пароль" required>
+            
+                </div>
+            
+                <div class="form-elem">
+                    <button type="submit" class="submit-btn login-btn">Войти</button>
+                </div>
+            
+            </form>
+
+            <div class="regist-text">
+                <span class="lk-text">Нет аккаунта? <a href="./registration.html" class="regist-link">Зарегистрироваться</a></span>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.main {
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.main-container {
+    margin: 0 auto;
+    min-width: 70%;
+    background-color: rgb(120, 95, 233);
+    border-radius: 50px;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    border-radius: 30px;
+}
+
+
+.user-info {
+    font-size: 18px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 50px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 20px 50px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+}
+
+.info-header {
+    font-size: 20px;
+    margin: 85px 0 40px 0;
+}
+
+.page-form-title {
+    font-size: 24px;
+}
+
+.wel-header {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.info-text {
+    margin-top: 20px;
+}
+
+.submit-btn {
+    padding: 12px;
+    margin-top: 20px;
+    min-width: 100%;
+}
+
+.change-password {
+    display: flex;
+    margin-top: 10px;
+}
+
+.change-password:visited, .change-password:link {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.user-profile-info>.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 400px;
+    margin-bottom: 50px;
+}
+
+#delete-btn {
+    background-color: rgb(232, 232, 232);
+    color: black;
+}
+
+#delete-btn:hover {
+    background-color: rgb(199, 199, 199);
+}
