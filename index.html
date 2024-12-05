@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
     <script type="module" src="./scripts/chats.js" defer></script>
+    <script type="module" src="./scripts/main.js" defer></script>
     <title>Main</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
                         </h1>
                     </a>
 
-                    <span class="lk-text">
+                    <span class="lk-text" id="create-chat">
                         Создать чат
                     </span>
                     
@@ -125,14 +126,16 @@
                     <span class="close-text">x</span>
                 </div>
 
-                <div class="form-elem">
+                <form class="form-elem">
                     <label for="user" class="form-label">Выберите пользователя</label>
-                    <input type="text" class="form-control" id="user"
+                    <input type="search" class="form-control" id="user"
                         name="user"
-                        placeholder="Введите пароль" required>
-                    <div class="user-select" id="user-select">
-                </div>
-                <button class="submit-btn" disabled>Создать</button>
+                        list="users"
+                        placeholder="Поиск">
+                    <select class="user-select" id="users">
+                    </select>
+                    <button class="submit-btn" disabled>Создать</button>
+                </form>
             </form>
         </div>
     </div>

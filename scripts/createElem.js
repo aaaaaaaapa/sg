@@ -86,3 +86,34 @@ export const loadMessages = (messages, currentUserId) => {
     }
 
 }
+
+const createOption = (item) => {
+
+    const option = document.createElement('option');
+
+    option.classList.add('user-option');
+    option.value = item.id;
+    option.innerText = item.username;
+
+    return option;
+
+}
+
+export const loadUsers = (users) => {
+
+    if (users.length > 0) {
+
+        const usersSelect = document.getElementById('users');
+        const submitBtn = document.querySelector('.submit-btn');
+
+        usersSelect.innerHTML = '';
+        submitBtn.removeAttribute('disabled');
+        
+        for (const item of users) {
+            const option = createOption(item);
+            usersSelect.append(option);
+        }
+
+    }
+
+}

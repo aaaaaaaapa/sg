@@ -16,13 +16,15 @@ export const getChats = async (user_id) => {
         console.error('Ошибка при загрузке сообщений:', error);
     });
 
-    chats.forEach(item => {
-        if (item.type === 'private') {
-            item.name = item.members[0];
-        }
-    });
-
-    return chats;
+    if (chats) {
+        chats.forEach(item => {
+            if (item.type === 'private') {
+                item.name = item.members[0];
+            }
+        });
+    
+        return chats;
+    }
 
 };
 
@@ -69,6 +71,27 @@ export const postMessage = async (chat_id, user_id, text) => {
 
 };
 
+export const getUsers = async (user_id) => {
 
+    const users = await fetch(`server/get_users.php?userId=${user_id}`, {
+        method: 'GET',
+        headers: {'Content-Type': 'application/json'}
+    })
+    .then(async response => {
+        if (!response.ok) {
+            throw new Error(`Ошибка! Статус: ${response.status}`);
+        }
+        if (response.text) {
+            return await response.json();
+        }
+    })
+    .catch(error => {
+        console.error('Ошибка при загрузке сообщений:', error);
+    });
+
+
+    return users;
+
+};
 
 
